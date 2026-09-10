@@ -1,20 +1,84 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/c148c74f-eafa-4883-97f0-600c2d716e61
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+\# SAT-SA — Supervisory Analytics Tool for SOC Assessment
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+SAT-SA is a supervisory analytics platform designed to support \*\*NCIIPC\*\* in assessing the operational effectiveness and cyber-resilience of Critical Sector Entities (CSEs).
+
+
+
+Instead of replacing or operating a Security Operations Center (SOC), SAT-SA analyzes periodically submitted SOC records such as alerts, investigations, evidence, escalations, closures, and workflow data.
+
+
+
+\## 🎯 Objective
+
+
+
+SAT-SA helps NCIIPC identify:
+
+
+
+\- Potential operational weaknesses
+
+\- Evidence gaps and inconsistencies
+
+\- Investigation-quality concerns
+
+\- KPI-versus-evidence mismatches
+
+\- Potential monitoring blind spots
+
+\- Workload-associated quality degradation
+
+\- Records that deserve deeper supervisory examination
+
+
+
+The platform prioritizes potentially doubtful or weak patterns so that \*\*NCIIPC personnel can manually examine the underlying records and make the final supervisory judgment.\*\*
+
+
+
+> \*\*SAT-SA doesn't say "GUILTY." SAT-SA says "WORTH CHECKING."\*\*
+
+
+
+\## 🔄 How SAT-SA Works
+
+
+
+```text
+
+CSE
+
+&#x20; ↓
+
+CSE SOC
+
+&#x20; ↓
+
+Alerts / Investigations / Evidence / Escalations / Closures
+
+&#x20; ↓
+
+Periodic Structured Submission
+
+&#x20; ↓
+
+SAT-SA
+
+&#x20; ↓
+
+Supervisory Analytics
+
+&#x20; ↓
+
+Potential Supervisory Signals
+
+&#x20; ↓
+
+NCIIPC Examiner / Senior Supervisor
+
+&#x20; ↓
+
+Manual Examination \& Supervisory Decision
+
