@@ -1,0 +1,6 @@
+{
+  "name": "SAT-SA — SOC Assurance & Threat Surveillance Analytics",
+  "description": "Supervisory analytics and assurance platform that independently validates whether SOC performance, investigations, procedures, and detection coverage are supported by operational evidence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

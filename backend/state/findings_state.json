@@ -1,0 +1,49 @@
+{
+  "FND-BETA-INT-01": {
+    "status": "UNDER REVIEW",
+    "review_notes": "Reviewed 15 sample investigations. Found identical text strings across analyst ANL-028 tickets.",
+    "recommendation": "Initiate coaching and review shift handover notes.",
+    "reviewed_by": "NCIIPC Senior Supervisor",
+    "reviewed_at": "2026-09-10 21:44:06",
+    "completed_by": null,
+    "completed_at": null,
+    "audit_history": [
+      {
+        "previous_status": "OPEN",
+        "new_status": "UNDER REVIEW",
+        "role": "NCIIPC Examiner",
+        "timestamp": "2026-09-10 08:45:31",
+        "review_note": "Reviewed 15 sample investigations. Found identical text strings across analyst ANL-028 tickets."
+      },
+      {
+        "previous_status": "UNDER REVIEW",
+        "new_status": "COMPLETED",
+        "role": "NCIIPC Senior Supervisor",
+        "timestamp": "2026-09-10 08:45:36",
+        "review_note": "Audited with SOC Beta lead. Remediation training scheduled. Action completed."
+      },
+      {
+        "previous_status": "COMPLETED",
+        "new_status": "OPEN",
+        "role": "NCIIPC Senior Supervisor",
+        "timestamp": "2026-09-10 08:45:44",
+        "review_note": "Reopening for baseline demo state."
+      },
+      {
+        "previous_status": "OPEN",
+        "new_status": "UNDER REVIEW",
+        "role": "NCIIPC Examiner",
+        "timestamp": "2026-09-10 21:03:00",
+        "review_note": "Reviewed 15 sample investigations. Found identical text strings across analyst ANL-028 tickets."
+      },
+      {
+        "previous_status": "UNDER REVIEW",
+        "new_status": "UNDER REVIEW",
+        "role": "NCIIPC Senior Supervisor",
+        "timestamp": "2026-09-10 21:44:06",
+        "review_note": "Reviewed 15 sample investigations. Found identical text strings across analyst ANL-028 tickets."
+      }
+    ],
+    "completion_notes": "Audited with SOC Beta lead. Remediation training scheduled. Action completed."
+  }
+}
