@@ -23,18 +23,26 @@ async function fetchJSON<T>(endpoint: string, options?: RequestInit): Promise<T>
     ...options,
   });
 
-  if (!response.ok) {
-    let errorMsg = '';
+  const responseText = await response.text();
+  let responseBody: unknown = null;
+
+  if (responseText) {
     try {
-      const errJson = await response.json();
-      errorMsg = errJson.error || errJson.message;
+      responseBody = JSON.parse(responseText);
     } catch {
-      errorMsg = await response.text();
+      responseBody = responseText;
     }
+  }
+
+  if (!response.ok) {
+    const errorBody = responseBody as { error?: string; message?: string } | string | null;
+    const errorMsg = typeof errorBody === 'string'
+      ? errorBody
+      : errorBody?.error || errorBody?.message || '';
     throw new Error(errorMsg || `API Error [${response.status}] ${response.statusText}`);
   }
 
-  return response.json();
+  return responseBody as T;
 }
 
 export const api = {
