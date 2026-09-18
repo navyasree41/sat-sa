@@ -1,0 +1,7 @@
+soc_id,assessment_period,reported_closure_rate,reported_response_time,reported_escalation_rate,reported_investigation_quality
+SOC-ALPHA,Last 90 Days,95.5,18.2,96.0,92.0
+SOC-BETA,Last 90 Days,99.1,4.5,88.0,89.0
+SOC-GAMMA,Last 90 Days,98.2,3.2,78.0,84.0
+SOC-DELTA,Last 90 Days,98.0,8.0,100.0,95.0
+SOC-EPSILON,Last 90 Days,91.0,24.5,92.0,86.0
+SOC-ZETA,Last 90 Days,94.0,14.0,95.0,88.0

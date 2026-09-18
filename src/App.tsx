@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Sidebar, NavTab } from './components/Sidebar';
 import { TopNav } from './components/TopNav';
 import { LoadingState, ErrorState } from './components/LoadingAndError';
@@ -41,6 +41,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const latestTabRequest = useRef(0);
 
   // Fetch initial SOC summaries list for current period
   const loadSocs = useCallback(async (period: AssessmentPeriod) => {
@@ -55,6 +56,7 @@ export default function App() {
   // Fetch data for the currently active tab
   const loadTabData = useCallback(
     async (tab: NavTab, socId: string, period: AssessmentPeriod, showRefreshSpinner = false) => {
+      const requestId = ++latestTabRequest.current;
       if (showRefreshSpinner) {
         setIsRefreshing(true);
       } else {
@@ -69,28 +71,36 @@ export default function App() {
             ? api.getInvestigations(socId, period, 'ALL', '', 150)
             : null;
           const res = await overviewPromise;
+          if (requestId !== latestTabRequest.current) return;
           setOverviewData(res);
           if (tab === 'examiner_workspace') {
             const investigationRes = await investigationPromise!;
+            if (requestId !== latestTabRequest.current) return;
             setInvestigationData(investigationRes);
           }
         } else if (tab === 'soc_assessments') {
           const res = await api.getSocs(period);
+          if (requestId !== latestTabRequest.current) return;
           setSocList(res);
         } else if (tab === 'investigation_integrity') {
           const res = await api.getInvestigations(socId, period, 'ALL', '', 150);
+          if (requestId !== latestTabRequest.current) return;
           setInvestigationData(res);
         } else if (tab === 'kpi_evidence') {
           const res = await api.getKpiEvidence(socId, period);
+          if (requestId !== latestTabRequest.current) return;
           setKpiData(res);
         } else if (tab === 'say_do') {
           const res = await api.getSayDoGaps(socId, period);
+          if (requestId !== latestTabRequest.current) return;
           setSayDoData(res);
         } else if (tab === 'detection_coverage') {
           const res = await api.getDetectionCoverage(socId, period);
+          if (requestId !== latestTabRequest.current) return;
           setDetectionData(res);
         } else if (tab === 'supervisory_queue') {
           const res = await api.getSupervisoryQueue(socId, period);
+          if (requestId !== latestTabRequest.current) return;
           setSupervisoryData(res);
         }
       } catch (err: any) {
@@ -99,8 +109,10 @@ export default function App() {
           err.message || 'Failed to communicate with Flask analytics service.'
         );
       } finally {
-        setIsLoading(false);
-        setIsRefreshing(false);
+        if (requestId === latestTabRequest.current) {
+          setIsLoading(false);
+          setIsRefreshing(false);
+        }
       }
     },
     []

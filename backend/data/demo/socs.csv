@@ -1,0 +1,7 @@
+soc_id,soc_name,analyst_count,assessment_period
+SOC-ALPHA,SOC Alpha (Global Operations),22,Last 90 Days
+SOC-BETA,SOC Beta (Regional Tier-1),18,Last 90 Days
+SOC-GAMMA,SOC Gamma (Cloud Defense),15,Last 90 Days
+SOC-DELTA,SOC Delta (Financial Services),20,Last 90 Days
+SOC-EPSILON,SOC Epsilon (Critical Infrastructure),14,Last 90 Days
+SOC-ZETA,SOC Zeta (Logistics & Supply),16,Last 90 Days

@@ -11,7 +11,12 @@ from flask import Flask, jsonify, request
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
-from data_generator import generate_synthetic_dataset, DATA_DIR
+from data_generator import (
+    DEMO_DATA_DIR,
+    FULL_DATA_DIR,
+    create_demo_dataset,
+    generate_synthetic_dataset,
+)
 from analytics.evidence_validation import analyze_evidence_validation
 from analytics.investigation_integrity import analyze_investigation_integrity
 from analytics.kpi_evidence import analyze_kpi_evidence_gap
@@ -41,6 +46,7 @@ def add_cors_headers(response):
 DATAFRAMES = {}
 GET_CACHE = {}
 GET_CACHE_TTL_SECONDS = 15
+DATA_DIR = os.environ.get("SAT_S_DATA_DIR", DEMO_DATA_DIR)
 
 def cache_get_response(namespace):
     """Cache read-only analytics responses briefly to avoid repeated recomputation."""
@@ -72,8 +78,12 @@ def load_data():
     all_exist = all(os.path.exists(os.path.join(DATA_DIR, f)) for f in required_files)
     
     if not all_exist:
-        print("[SAT-SA] Generating reproducible synthetic dataset (seed=42)...")
-        generate_synthetic_dataset(output_dir=DATA_DIR, seed=42)
+        if DATA_DIR == DEMO_DATA_DIR:
+            print("[SAT-SA] Generating reduced synthetic DEMO dataset (seed=42)...")
+            create_demo_dataset(source_dir=FULL_DATA_DIR, output_dir=DATA_DIR, seed=42)
+        else:
+            print("[SAT-SA] Generating reproducible synthetic dataset (seed=42)...")
+            generate_synthetic_dataset(output_dir=DATA_DIR, seed=42)
     
     print("[SAT-SA] Loading synthetic SOC datasets into memory...")
     DATAFRAMES["socs"] = pd.read_csv(os.path.join(DATA_DIR, "socs.csv"))
@@ -200,7 +210,7 @@ def get_overview():
     elif ds["soc_id"] == "SOC-ZETA":
         assurance_score = 65
     else:
-        assurance_score = max(55, min(95, base_score))
+        assurance_score = max(0, min(95, base_score))
 
     # Reward completing findings through managerial approval
     if len(completed_findings) > 0:
@@ -241,7 +251,16 @@ def get_overview():
             "explanation": "No active high-risk supervisory findings remain unaddressed for this scope."
         }]
 
-    kpi_alignment_pct = 94.0 if ds["soc_id"] == "SOC-ALPHA" else (68.0 if ds["soc_id"] == "SOC-DELTA" else 78.5)
+    kpi_results = kpi_gap.get("by_soc", []) if "by_soc" in kpi_gap else [kpi_gap]
+    kpi_scores = []
+    for result in kpi_results:
+        for metric in result.get("metrics", []):
+            gap = abs(float(metric.get("gap", 0)))
+            reported = max(abs(float(metric.get("reported", 0))), 1.0)
+            score = 100 - ((gap / reported) * 100 if metric.get("unit") == "min" else gap)
+            kpi_scores.append(max(0.0, min(100.0, score)))
+    kpi_gap_score = round(float(np.mean(kpi_scores)), 1) if kpi_scores else 0.0
+    kpi_alignment_pct = round((kpi_gap_score + ev_cov) / 2, 1)
 
     return jsonify({
         "assessment_period": f"Last {ds['period_days']} Days",
@@ -278,6 +297,9 @@ def get_socs():
         ds_soc = filter_dataset(p_days, s_id)
         alert_cnt = len(ds_soc["alerts"])
         inv_cnt = len(ds_soc["investigations"])
+        ev_val = analyze_evidence_validation(
+            ds_soc["evidence"], ds_soc["investigations"], ds_soc["alerts"], soc_id=s_id
+        )
 
         if s_id == "SOC-ALPHA":
             score = 92
@@ -329,6 +351,8 @@ def get_socs():
             priority = "Normal"
             badge_color = "blue"
 
+        score = round(ev_val.get("evidence_coverage_pct", 0))
+
         results.append({
             "soc_id": s_id,
             "soc_name": s["soc_name"],
@@ -364,8 +388,7 @@ def get_soc_detail(soc_id):
     det_cov = analyze_detection_coverage(ds["rules"], ds["alerts"], ds["assets"], soc_id=soc_id)
     queue = calculate_risk_and_queue(ds["socs"], inv_int, kpi_gap, say_do, det_cov, soc_id=soc_id, period_days=ds["period_days"])
 
-    scores = {"SOC-ALPHA": 92, "SOC-BETA": 64, "SOC-GAMMA": 61, "SOC-DELTA": 68, "SOC-EPSILON": 70, "SOC-ZETA": 65}
-    assurance_score = scores.get(soc_id, 75)
+    assurance_score = round(ev_val.get("evidence_coverage_pct", 0))
 
     return jsonify({
         "soc_id": soc_id,

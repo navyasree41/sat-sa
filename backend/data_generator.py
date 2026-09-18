@@ -2,8 +2,128 @@ import os
 import random
 import hashlib
 from datetime import datetime, timedelta
+import pandas as pd
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+FULL_DATA_DIR = os.path.join(DATA_DIR, "full")
+DEMO_DATA_DIR = os.path.join(DATA_DIR, "demo")
+DEMO_DATASET_SIZE = 1000
+
+
+def create_demo_dataset(
+    source_dir=FULL_DATA_DIR,
+    output_dir=DEMO_DATA_DIR,
+    alert_count=DEMO_DATASET_SIZE,
+    seed=42,
+):
+    """Create a representative, relationship-preserving demo dataset from full CSVs."""
+    required_files = [
+        "socs.csv",
+        "alerts.csv",
+        "investigations.csv",
+        "escalations.csv",
+        "kpis.csv",
+        "assets.csv",
+        "detection_rules.csv",
+        "evidence.csv",
+    ]
+    if not all(os.path.exists(os.path.join(source_dir, filename)) for filename in required_files):
+        raise FileNotFoundError(f"Full dataset is incomplete: {source_dir}")
+
+    os.makedirs(output_dir, exist_ok=True)
+    frames = {
+        filename: pd.read_csv(os.path.join(source_dir, filename))
+        for filename in required_files
+    }
+
+    alerts = frames["alerts.csv"]
+    if alert_count < 1 or alert_count > len(alerts):
+        raise ValueError(f"alert_count must be between 1 and {len(alerts)}")
+
+    # Keep the SOC distribution proportional while pinning planted Beta signal cases.
+    soc_targets = {
+        "SOC-ALPHA": 190,
+        "SOC-BETA": 170,
+        "SOC-GAMMA": 155,
+        "SOC-DELTA": 175,
+        "SOC-EPSILON": 145,
+        "SOC-ZETA": 165,
+    }
+    target_total = sum(soc_targets.values())
+    if target_total != alert_count:
+        raise ValueError("SOC demo targets must add up to alert_count")
+
+    investigations = frames["investigations.csv"].merge(
+        alerts[["alert_id", "soc_id", "severity"]], on="alert_id", how="inner"
+    )
+    beta_candidates = investigations[
+        (investigations["soc_id"] == "SOC-BETA")
+        & (
+            (investigations["investigation_duration"] < 2.5)
+            | (
+                (investigations["investigation_duration"] < 4.5)
+                & investigations["severity"].isin(["Critical", "High"])
+            )
+        )
+        & (investigations["evidence_count"] <= 1)
+        & (investigations["artifacts_collected"] == 0)
+    ]
+    pinned_ids = set(beta_candidates.sort_values("investigation_id").head(12)["alert_id"])
+    pinned_ids.update(
+        investigations.loc[
+            investigations["investigation_id"] == "INV-02140", "alert_id"
+        ]
+    )
+
+    selected_alerts = []
+    for soc_id, target in soc_targets.items():
+        soc_alerts = alerts[alerts["soc_id"] == soc_id]
+        pinned = soc_alerts[soc_alerts["alert_id"].isin(pinned_ids)]
+        sample_size = target - len(pinned)
+        sampled = soc_alerts.drop(index=pinned.index).sample(
+            n=sample_size, random_state=seed + len(selected_alerts)
+        )
+        selected_alerts.append(pd.concat([pinned, sampled]))
+
+    demo_alerts = pd.concat(selected_alerts).sort_values("alert_id").reset_index(drop=True)
+    selected_ids = set(demo_alerts["alert_id"])
+
+    demo_investigations = frames["investigations.csv"][
+        frames["investigations.csv"]["alert_id"].isin(selected_ids)
+    ].copy()
+    demo_evidence = frames["evidence.csv"][
+        frames["evidence.csv"]["alert_id"].isin(selected_ids)
+    ].copy()
+    demo_escalations = frames["escalations.csv"][
+        frames["escalations.csv"]["alert_id"].isin(selected_ids)
+    ].copy()
+
+    referenced_assets = set(demo_alerts["asset_id"])
+    critical_assets = set(
+        frames["assets.csv"].loc[
+            frames["assets.csv"]["criticality"] == "Critical", "asset_id"
+        ]
+    )
+    demo_assets = frames["assets.csv"][
+        frames["assets.csv"]["asset_id"].isin(referenced_assets | critical_assets)
+    ].copy()
+
+    output_frames = {
+        "socs.csv": frames["socs.csv"],
+        "alerts.csv": demo_alerts,
+        "investigations.csv": demo_investigations,
+        "escalations.csv": demo_escalations,
+        "kpis.csv": frames["kpis.csv"],
+        "assets.csv": demo_assets,
+        "detection_rules.csv": frames["detection_rules.csv"],
+        "evidence.csv": demo_evidence,
+    }
+    for filename, frame in output_frames.items():
+        frame.to_csv(os.path.join(output_dir, filename), index=False)
+
+    print(f"Demo dataset generated successfully in {output_dir}:")
+    for filename, frame in output_frames.items():
+        print(f" - {filename}: {len(frame)} records")
 
 def generate_synthetic_dataset(output_dir=DATA_DIR, seed=42):
     """

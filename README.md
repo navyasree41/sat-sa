@@ -8,6 +8,10 @@ SAT-SA is a supervisory analytics platform designed to support \*\*NCIIPC\*\* in
 
 Instead of replacing or operating a Security Operations Center (SOC), SAT-SA analyzes periodically submitted SOC records such as alerts, investigations, evidence, escalations, closures, and workflow data.
 
+## Demo Dataset
+
+The deployed prototype uses a reduced synthetic DEMO dataset for fast demonstrations. The original full dataset remains available under `backend/data/full` for scalability testing. The DEMO dataset is representative, preserves cross-record relationships, and retains the planted supervisory signals used by the important findings.
+
 
 
 \## 🎯 Objective

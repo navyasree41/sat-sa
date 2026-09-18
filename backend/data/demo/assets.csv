@@ -1,0 +1,437 @@
+asset_id,asset_name,asset_type,criticality,business_impact
+AST-0001,SRV-DATABASE-001,Database Server,Critical,Catastrophic Business Impact
+AST-0002,AST-PAYMENT-002,Payment Gateway,Critical,Catastrophic Business Impact
+AST-0003,AST-WORKSTATION-003,Workstation,Critical,Catastrophic Business Impact
+AST-0004,AST-API-004,API Gateway,Critical,Catastrophic Business Impact
+AST-0005,AST-CLOUD-005,Cloud Storage Bucket,Critical,Catastrophic Business Impact
+AST-0006,AST-FIREWALL-006,Firewall Appliance,Critical,Catastrophic Business Impact
+AST-0007,AST-IDENTITY-007,Identity Provider (IdP),Critical,Catastrophic Business Impact
+AST-0008,SRV-DOMAIN-008,Domain Controller,Critical,Catastrophic Business Impact
+AST-0009,SRV-DATABASE-009,Database Server,Critical,Catastrophic Business Impact
+AST-0010,AST-PAYMENT-010,Payment Gateway,Critical,Catastrophic Business Impact
+AST-0011,AST-WORKSTATION-011,Workstation,Critical,Catastrophic Business Impact
+AST-0012,AST-API-012,API Gateway,Critical,Catastrophic Business Impact
+AST-0013,AST-CLOUD-013,Cloud Storage Bucket,Critical,Catastrophic Business Impact
+AST-0014,AST-FIREWALL-014,Firewall Appliance,Critical,Catastrophic Business Impact
+AST-0015,AST-IDENTITY-015,Identity Provider (IdP),Critical,Catastrophic Business Impact
+AST-0016,SRV-DOMAIN-016,Domain Controller,Critical,Catastrophic Business Impact
+AST-0017,SRV-DATABASE-017,Database Server,Critical,Catastrophic Business Impact
+AST-0018,AST-PAYMENT-018,Payment Gateway,Critical,Catastrophic Business Impact
+AST-0019,AST-WORKSTATION-019,Workstation,Critical,Catastrophic Business Impact
+AST-0020,AST-API-020,API Gateway,Critical,Catastrophic Business Impact
+AST-0021,AST-CLOUD-021,Cloud Storage Bucket,Critical,Catastrophic Business Impact
+AST-0022,AST-FIREWALL-022,Firewall Appliance,Critical,Catastrophic Business Impact
+AST-0023,AST-IDENTITY-023,Identity Provider (IdP),Critical,Catastrophic Business Impact
+AST-0024,SRV-DOMAIN-024,Domain Controller,Critical,Catastrophic Business Impact
+AST-0025,SRV-DATABASE-025,Database Server,Critical,Catastrophic Business Impact
+AST-0026,AST-PAYMENT-026,Payment Gateway,Critical,Catastrophic Business Impact
+AST-0027,AST-WORKSTATION-027,Workstation,Critical,Catastrophic Business Impact
+AST-0028,AST-API-028,API Gateway,Critical,Catastrophic Business Impact
+AST-0029,AST-CLOUD-029,Cloud Storage Bucket,Critical,Catastrophic Business Impact
+AST-0030,AST-FIREWALL-030,Firewall Appliance,Critical,Catastrophic Business Impact
+AST-0031,AST-IDENTITY-031,Identity Provider (IdP),Critical,Catastrophic Business Impact
+AST-0032,SRV-DOMAIN-032,Domain Controller,Critical,Catastrophic Business Impact
+AST-0033,SRV-DATABASE-033,Database Server,Critical,Catastrophic Business Impact
+AST-0034,AST-PAYMENT-034,Payment Gateway,Critical,Catastrophic Business Impact
+AST-0035,AST-WORKSTATION-035,Workstation,Critical,Catastrophic Business Impact
+AST-0036,AST-API-036,API Gateway,Critical,Catastrophic Business Impact
+AST-0037,AST-CLOUD-037,Cloud Storage Bucket,Critical,Catastrophic Business Impact
+AST-0038,AST-FIREWALL-038,Firewall Appliance,Critical,Catastrophic Business Impact
+AST-0039,AST-IDENTITY-039,Identity Provider (IdP),Critical,Catastrophic Business Impact
+AST-0040,SRV-DOMAIN-040,Domain Controller,Critical,Catastrophic Business Impact
+AST-0041,SRV-DATABASE-041,Database Server,Critical,Catastrophic Business Impact
+AST-0042,AST-PAYMENT-042,Payment Gateway,Critical,Catastrophic Business Impact
+AST-0043,AST-WORKSTATION-043,Workstation,Critical,Catastrophic Business Impact
+AST-0044,AST-API-044,API Gateway,Critical,Catastrophic Business Impact
+AST-0045,AST-CLOUD-045,Cloud Storage Bucket,Critical,Catastrophic Business Impact
+AST-0046,AST-FIREWALL-046,Firewall Appliance,Critical,Catastrophic Business Impact
+AST-0047,AST-IDENTITY-047,Identity Provider (IdP),Critical,Catastrophic Business Impact
+AST-0048,SRV-DOMAIN-048,Domain Controller,Critical,Catastrophic Business Impact
+AST-0049,SRV-DATABASE-049,Database Server,Critical,Catastrophic Business Impact
+AST-0050,AST-PAYMENT-050,Payment Gateway,Critical,Catastrophic Business Impact
+AST-0051,AST-WORKSTATION-051,Workstation,High,Severe Operational Interruption
+AST-0052,AST-API-052,API Gateway,High,Severe Operational Interruption
+AST-0053,AST-CLOUD-053,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0055,AST-IDENTITY-055,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0056,SRV-DOMAIN-056,Domain Controller,High,Severe Operational Interruption
+AST-0057,SRV-DATABASE-057,Database Server,High,Severe Operational Interruption
+AST-0058,AST-PAYMENT-058,Payment Gateway,High,Severe Operational Interruption
+AST-0059,AST-WORKSTATION-059,Workstation,High,Severe Operational Interruption
+AST-0060,AST-API-060,API Gateway,High,Severe Operational Interruption
+AST-0061,AST-CLOUD-061,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0062,AST-FIREWALL-062,Firewall Appliance,High,Severe Operational Interruption
+AST-0063,AST-IDENTITY-063,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0064,SRV-DOMAIN-064,Domain Controller,High,Severe Operational Interruption
+AST-0065,SRV-DATABASE-065,Database Server,High,Severe Operational Interruption
+AST-0066,AST-PAYMENT-066,Payment Gateway,High,Severe Operational Interruption
+AST-0067,AST-WORKSTATION-067,Workstation,High,Severe Operational Interruption
+AST-0068,AST-API-068,API Gateway,High,Severe Operational Interruption
+AST-0069,AST-CLOUD-069,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0070,AST-FIREWALL-070,Firewall Appliance,High,Severe Operational Interruption
+AST-0071,AST-IDENTITY-071,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0072,SRV-DOMAIN-072,Domain Controller,High,Severe Operational Interruption
+AST-0073,SRV-DATABASE-073,Database Server,High,Severe Operational Interruption
+AST-0074,AST-PAYMENT-074,Payment Gateway,High,Severe Operational Interruption
+AST-0075,AST-WORKSTATION-075,Workstation,High,Severe Operational Interruption
+AST-0076,AST-API-076,API Gateway,High,Severe Operational Interruption
+AST-0077,AST-CLOUD-077,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0078,AST-FIREWALL-078,Firewall Appliance,High,Severe Operational Interruption
+AST-0079,AST-IDENTITY-079,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0080,SRV-DOMAIN-080,Domain Controller,High,Severe Operational Interruption
+AST-0081,SRV-DATABASE-081,Database Server,High,Severe Operational Interruption
+AST-0082,AST-PAYMENT-082,Payment Gateway,High,Severe Operational Interruption
+AST-0084,AST-API-084,API Gateway,High,Severe Operational Interruption
+AST-0085,AST-CLOUD-085,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0086,AST-FIREWALL-086,Firewall Appliance,High,Severe Operational Interruption
+AST-0087,AST-IDENTITY-087,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0088,SRV-DOMAIN-088,Domain Controller,High,Severe Operational Interruption
+AST-0089,SRV-DATABASE-089,Database Server,High,Severe Operational Interruption
+AST-0090,AST-PAYMENT-090,Payment Gateway,High,Severe Operational Interruption
+AST-0091,AST-WORKSTATION-091,Workstation,High,Severe Operational Interruption
+AST-0092,AST-API-092,API Gateway,High,Severe Operational Interruption
+AST-0093,AST-CLOUD-093,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0094,AST-FIREWALL-094,Firewall Appliance,High,Severe Operational Interruption
+AST-0095,AST-IDENTITY-095,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0096,SRV-DOMAIN-096,Domain Controller,High,Severe Operational Interruption
+AST-0097,SRV-DATABASE-097,Database Server,High,Severe Operational Interruption
+AST-0098,AST-PAYMENT-098,Payment Gateway,High,Severe Operational Interruption
+AST-0099,AST-WORKSTATION-099,Workstation,High,Severe Operational Interruption
+AST-0100,AST-API-100,API Gateway,High,Severe Operational Interruption
+AST-0101,AST-CLOUD-101,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0102,AST-FIREWALL-102,Firewall Appliance,High,Severe Operational Interruption
+AST-0103,AST-IDENTITY-103,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0104,SRV-DOMAIN-104,Domain Controller,High,Severe Operational Interruption
+AST-0105,SRV-DATABASE-105,Database Server,High,Severe Operational Interruption
+AST-0106,AST-PAYMENT-106,Payment Gateway,High,Severe Operational Interruption
+AST-0107,AST-WORKSTATION-107,Workstation,High,Severe Operational Interruption
+AST-0108,AST-API-108,API Gateway,High,Severe Operational Interruption
+AST-0109,AST-CLOUD-109,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0110,AST-FIREWALL-110,Firewall Appliance,High,Severe Operational Interruption
+AST-0111,AST-IDENTITY-111,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0112,SRV-DOMAIN-112,Domain Controller,High,Severe Operational Interruption
+AST-0113,SRV-DATABASE-113,Database Server,High,Severe Operational Interruption
+AST-0114,AST-PAYMENT-114,Payment Gateway,High,Severe Operational Interruption
+AST-0115,AST-WORKSTATION-115,Workstation,High,Severe Operational Interruption
+AST-0116,AST-API-116,API Gateway,High,Severe Operational Interruption
+AST-0117,AST-CLOUD-117,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0118,AST-FIREWALL-118,Firewall Appliance,High,Severe Operational Interruption
+AST-0119,AST-IDENTITY-119,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0120,SRV-DOMAIN-120,Domain Controller,High,Severe Operational Interruption
+AST-0121,SRV-DATABASE-121,Database Server,High,Severe Operational Interruption
+AST-0122,AST-PAYMENT-122,Payment Gateway,High,Severe Operational Interruption
+AST-0123,AST-WORKSTATION-123,Workstation,High,Severe Operational Interruption
+AST-0124,AST-API-124,API Gateway,High,Severe Operational Interruption
+AST-0125,AST-CLOUD-125,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0126,AST-FIREWALL-126,Firewall Appliance,High,Severe Operational Interruption
+AST-0127,AST-IDENTITY-127,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0128,SRV-DOMAIN-128,Domain Controller,High,Severe Operational Interruption
+AST-0129,SRV-DATABASE-129,Database Server,High,Severe Operational Interruption
+AST-0130,AST-PAYMENT-130,Payment Gateway,High,Severe Operational Interruption
+AST-0131,AST-WORKSTATION-131,Workstation,High,Severe Operational Interruption
+AST-0132,AST-API-132,API Gateway,High,Severe Operational Interruption
+AST-0133,AST-CLOUD-133,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0134,AST-FIREWALL-134,Firewall Appliance,High,Severe Operational Interruption
+AST-0135,AST-IDENTITY-135,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0136,SRV-DOMAIN-136,Domain Controller,High,Severe Operational Interruption
+AST-0137,SRV-DATABASE-137,Database Server,High,Severe Operational Interruption
+AST-0138,AST-PAYMENT-138,Payment Gateway,High,Severe Operational Interruption
+AST-0139,AST-WORKSTATION-139,Workstation,High,Severe Operational Interruption
+AST-0142,AST-FIREWALL-142,Firewall Appliance,High,Severe Operational Interruption
+AST-0143,AST-IDENTITY-143,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0144,SRV-DOMAIN-144,Domain Controller,High,Severe Operational Interruption
+AST-0145,SRV-DATABASE-145,Database Server,High,Severe Operational Interruption
+AST-0146,AST-PAYMENT-146,Payment Gateway,High,Severe Operational Interruption
+AST-0147,AST-WORKSTATION-147,Workstation,High,Severe Operational Interruption
+AST-0148,AST-API-148,API Gateway,High,Severe Operational Interruption
+AST-0149,AST-CLOUD-149,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0150,AST-FIREWALL-150,Firewall Appliance,High,Severe Operational Interruption
+AST-0151,AST-IDENTITY-151,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0152,SRV-DOMAIN-152,Domain Controller,High,Severe Operational Interruption
+AST-0153,SRV-DATABASE-153,Database Server,High,Severe Operational Interruption
+AST-0154,AST-PAYMENT-154,Payment Gateway,High,Severe Operational Interruption
+AST-0155,AST-WORKSTATION-155,Workstation,High,Severe Operational Interruption
+AST-0156,AST-API-156,API Gateway,High,Severe Operational Interruption
+AST-0157,AST-CLOUD-157,Cloud Storage Bucket,High,Severe Operational Interruption
+AST-0158,AST-FIREWALL-158,Firewall Appliance,High,Severe Operational Interruption
+AST-0159,AST-IDENTITY-159,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0160,SRV-DOMAIN-160,Domain Controller,High,Severe Operational Interruption
+AST-0161,SRV-DATABASE-161,Database Server,High,Severe Operational Interruption
+AST-0162,AST-PAYMENT-162,Payment Gateway,High,Severe Operational Interruption
+AST-0163,AST-WORKSTATION-163,Workstation,High,Severe Operational Interruption
+AST-0164,AST-API-164,API Gateway,High,Severe Operational Interruption
+AST-0167,AST-IDENTITY-167,Identity Provider (IdP),High,Severe Operational Interruption
+AST-0168,SRV-DOMAIN-168,Domain Controller,High,Severe Operational Interruption
+AST-0169,SRV-DATABASE-169,Database Server,High,Severe Operational Interruption
+AST-0170,AST-PAYMENT-170,Payment Gateway,High,Severe Operational Interruption
+AST-0171,AST-WORKSTATION-171,Workstation,Medium,Moderate Workload Degradation
+AST-0172,AST-API-172,API Gateway,Medium,Moderate Workload Degradation
+AST-0173,AST-CLOUD-173,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0174,AST-FIREWALL-174,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0175,AST-IDENTITY-175,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0176,SRV-DOMAIN-176,Domain Controller,Medium,Moderate Workload Degradation
+AST-0177,SRV-DATABASE-177,Database Server,Medium,Moderate Workload Degradation
+AST-0178,AST-PAYMENT-178,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0179,AST-WORKSTATION-179,Workstation,Medium,Moderate Workload Degradation
+AST-0180,AST-API-180,API Gateway,Medium,Moderate Workload Degradation
+AST-0182,AST-FIREWALL-182,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0183,AST-IDENTITY-183,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0184,SRV-DOMAIN-184,Domain Controller,Medium,Moderate Workload Degradation
+AST-0185,SRV-DATABASE-185,Database Server,Medium,Moderate Workload Degradation
+AST-0187,AST-WORKSTATION-187,Workstation,Medium,Moderate Workload Degradation
+AST-0188,AST-API-188,API Gateway,Medium,Moderate Workload Degradation
+AST-0189,AST-CLOUD-189,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0190,AST-FIREWALL-190,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0191,AST-IDENTITY-191,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0192,SRV-DOMAIN-192,Domain Controller,Medium,Moderate Workload Degradation
+AST-0193,SRV-DATABASE-193,Database Server,Medium,Moderate Workload Degradation
+AST-0194,AST-PAYMENT-194,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0195,AST-WORKSTATION-195,Workstation,Medium,Moderate Workload Degradation
+AST-0198,AST-FIREWALL-198,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0199,AST-IDENTITY-199,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0200,SRV-DOMAIN-200,Domain Controller,Medium,Moderate Workload Degradation
+AST-0201,SRV-DATABASE-201,Database Server,Medium,Moderate Workload Degradation
+AST-0202,AST-PAYMENT-202,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0203,AST-WORKSTATION-203,Workstation,Medium,Moderate Workload Degradation
+AST-0204,AST-API-204,API Gateway,Medium,Moderate Workload Degradation
+AST-0205,AST-CLOUD-205,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0206,AST-FIREWALL-206,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0207,AST-IDENTITY-207,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0208,SRV-DOMAIN-208,Domain Controller,Medium,Moderate Workload Degradation
+AST-0209,SRV-DATABASE-209,Database Server,Medium,Moderate Workload Degradation
+AST-0210,AST-PAYMENT-210,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0211,AST-WORKSTATION-211,Workstation,Medium,Moderate Workload Degradation
+AST-0212,AST-API-212,API Gateway,Medium,Moderate Workload Degradation
+AST-0213,AST-CLOUD-213,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0214,AST-FIREWALL-214,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0215,AST-IDENTITY-215,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0216,SRV-DOMAIN-216,Domain Controller,Medium,Moderate Workload Degradation
+AST-0217,SRV-DATABASE-217,Database Server,Medium,Moderate Workload Degradation
+AST-0219,AST-WORKSTATION-219,Workstation,Medium,Moderate Workload Degradation
+AST-0220,AST-API-220,API Gateway,Medium,Moderate Workload Degradation
+AST-0222,AST-FIREWALL-222,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0224,SRV-DOMAIN-224,Domain Controller,Medium,Moderate Workload Degradation
+AST-0226,AST-PAYMENT-226,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0227,AST-WORKSTATION-227,Workstation,Medium,Moderate Workload Degradation
+AST-0228,AST-API-228,API Gateway,Medium,Moderate Workload Degradation
+AST-0229,AST-CLOUD-229,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0230,AST-FIREWALL-230,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0231,AST-IDENTITY-231,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0232,SRV-DOMAIN-232,Domain Controller,Medium,Moderate Workload Degradation
+AST-0233,SRV-DATABASE-233,Database Server,Medium,Moderate Workload Degradation
+AST-0234,AST-PAYMENT-234,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0235,AST-WORKSTATION-235,Workstation,Medium,Moderate Workload Degradation
+AST-0236,AST-API-236,API Gateway,Medium,Moderate Workload Degradation
+AST-0237,AST-CLOUD-237,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0238,AST-FIREWALL-238,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0239,AST-IDENTITY-239,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0240,SRV-DOMAIN-240,Domain Controller,Medium,Moderate Workload Degradation
+AST-0241,SRV-DATABASE-241,Database Server,Medium,Moderate Workload Degradation
+AST-0242,AST-PAYMENT-242,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0243,AST-WORKSTATION-243,Workstation,Medium,Moderate Workload Degradation
+AST-0244,AST-API-244,API Gateway,Medium,Moderate Workload Degradation
+AST-0247,AST-IDENTITY-247,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0249,SRV-DATABASE-249,Database Server,Medium,Moderate Workload Degradation
+AST-0250,AST-PAYMENT-250,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0251,AST-WORKSTATION-251,Workstation,Medium,Moderate Workload Degradation
+AST-0252,AST-API-252,API Gateway,Medium,Moderate Workload Degradation
+AST-0253,AST-CLOUD-253,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0254,AST-FIREWALL-254,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0255,AST-IDENTITY-255,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0256,SRV-DOMAIN-256,Domain Controller,Medium,Moderate Workload Degradation
+AST-0258,AST-PAYMENT-258,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0259,AST-WORKSTATION-259,Workstation,Medium,Moderate Workload Degradation
+AST-0260,AST-API-260,API Gateway,Medium,Moderate Workload Degradation
+AST-0262,AST-FIREWALL-262,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0263,AST-IDENTITY-263,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0266,AST-PAYMENT-266,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0267,AST-WORKSTATION-267,Workstation,Medium,Moderate Workload Degradation
+AST-0268,AST-API-268,API Gateway,Medium,Moderate Workload Degradation
+AST-0269,AST-CLOUD-269,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0270,AST-FIREWALL-270,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0271,AST-IDENTITY-271,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0272,SRV-DOMAIN-272,Domain Controller,Medium,Moderate Workload Degradation
+AST-0273,SRV-DATABASE-273,Database Server,Medium,Moderate Workload Degradation
+AST-0274,AST-PAYMENT-274,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0275,AST-WORKSTATION-275,Workstation,Medium,Moderate Workload Degradation
+AST-0277,AST-CLOUD-277,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0279,AST-IDENTITY-279,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0280,SRV-DOMAIN-280,Domain Controller,Medium,Moderate Workload Degradation
+AST-0282,AST-PAYMENT-282,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0283,AST-WORKSTATION-283,Workstation,Medium,Moderate Workload Degradation
+AST-0284,AST-API-284,API Gateway,Medium,Moderate Workload Degradation
+AST-0285,AST-CLOUD-285,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0286,AST-FIREWALL-286,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0287,AST-IDENTITY-287,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0288,SRV-DOMAIN-288,Domain Controller,Medium,Moderate Workload Degradation
+AST-0289,SRV-DATABASE-289,Database Server,Medium,Moderate Workload Degradation
+AST-0290,AST-PAYMENT-290,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0292,AST-API-292,API Gateway,Medium,Moderate Workload Degradation
+AST-0293,AST-CLOUD-293,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0294,AST-FIREWALL-294,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0295,AST-IDENTITY-295,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0296,SRV-DOMAIN-296,Domain Controller,Medium,Moderate Workload Degradation
+AST-0298,AST-PAYMENT-298,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0300,AST-API-300,API Gateway,Medium,Moderate Workload Degradation
+AST-0304,SRV-DOMAIN-304,Domain Controller,Medium,Moderate Workload Degradation
+AST-0307,AST-WORKSTATION-307,Workstation,Medium,Moderate Workload Degradation
+AST-0308,AST-API-308,API Gateway,Medium,Moderate Workload Degradation
+AST-0309,AST-CLOUD-309,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0310,AST-FIREWALL-310,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0312,SRV-DOMAIN-312,Domain Controller,Medium,Moderate Workload Degradation
+AST-0314,AST-PAYMENT-314,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0315,AST-WORKSTATION-315,Workstation,Medium,Moderate Workload Degradation
+AST-0316,AST-API-316,API Gateway,Medium,Moderate Workload Degradation
+AST-0320,SRV-DOMAIN-320,Domain Controller,Medium,Moderate Workload Degradation
+AST-0321,SRV-DATABASE-321,Database Server,Medium,Moderate Workload Degradation
+AST-0322,AST-PAYMENT-322,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0323,AST-WORKSTATION-323,Workstation,Medium,Moderate Workload Degradation
+AST-0324,AST-API-324,API Gateway,Medium,Moderate Workload Degradation
+AST-0325,AST-CLOUD-325,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0326,AST-FIREWALL-326,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0328,SRV-DOMAIN-328,Domain Controller,Medium,Moderate Workload Degradation
+AST-0330,AST-PAYMENT-330,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0331,AST-WORKSTATION-331,Workstation,Medium,Moderate Workload Degradation
+AST-0333,AST-CLOUD-333,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0334,AST-FIREWALL-334,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0335,AST-IDENTITY-335,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0338,AST-PAYMENT-338,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0339,AST-WORKSTATION-339,Workstation,Medium,Moderate Workload Degradation
+AST-0340,AST-API-340,API Gateway,Medium,Moderate Workload Degradation
+AST-0341,AST-CLOUD-341,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0342,AST-FIREWALL-342,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0343,AST-IDENTITY-343,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0344,SRV-DOMAIN-344,Domain Controller,Medium,Moderate Workload Degradation
+AST-0345,SRV-DATABASE-345,Database Server,Medium,Moderate Workload Degradation
+AST-0346,AST-PAYMENT-346,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0347,AST-WORKSTATION-347,Workstation,Medium,Moderate Workload Degradation
+AST-0348,AST-API-348,API Gateway,Medium,Moderate Workload Degradation
+AST-0349,AST-CLOUD-349,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0350,AST-FIREWALL-350,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0351,AST-IDENTITY-351,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0352,SRV-DOMAIN-352,Domain Controller,Medium,Moderate Workload Degradation
+AST-0353,SRV-DATABASE-353,Database Server,Medium,Moderate Workload Degradation
+AST-0354,AST-PAYMENT-354,Payment Gateway,Medium,Moderate Workload Degradation
+AST-0355,AST-WORKSTATION-355,Workstation,Medium,Moderate Workload Degradation
+AST-0356,AST-API-356,API Gateway,Medium,Moderate Workload Degradation
+AST-0357,AST-CLOUD-357,Cloud Storage Bucket,Medium,Moderate Workload Degradation
+AST-0358,AST-FIREWALL-358,Firewall Appliance,Medium,Moderate Workload Degradation
+AST-0359,AST-IDENTITY-359,Identity Provider (IdP),Medium,Moderate Workload Degradation
+AST-0360,SRV-DOMAIN-360,Domain Controller,Medium,Moderate Workload Degradation
+AST-0361,SRV-DATABASE-361,Database Server,Low,Minimal Impact
+AST-0362,AST-PAYMENT-362,Payment Gateway,Low,Minimal Impact
+AST-0363,AST-WORKSTATION-363,Workstation,Low,Minimal Impact
+AST-0364,AST-API-364,API Gateway,Low,Minimal Impact
+AST-0365,AST-CLOUD-365,Cloud Storage Bucket,Low,Minimal Impact
+AST-0366,AST-FIREWALL-366,Firewall Appliance,Low,Minimal Impact
+AST-0370,AST-PAYMENT-370,Payment Gateway,Low,Minimal Impact
+AST-0371,AST-WORKSTATION-371,Workstation,Low,Minimal Impact
+AST-0372,AST-API-372,API Gateway,Low,Minimal Impact
+AST-0373,AST-CLOUD-373,Cloud Storage Bucket,Low,Minimal Impact
+AST-0374,AST-FIREWALL-374,Firewall Appliance,Low,Minimal Impact
+AST-0375,AST-IDENTITY-375,Identity Provider (IdP),Low,Minimal Impact
+AST-0376,SRV-DOMAIN-376,Domain Controller,Low,Minimal Impact
+AST-0378,AST-PAYMENT-378,Payment Gateway,Low,Minimal Impact
+AST-0380,AST-API-380,API Gateway,Low,Minimal Impact
+AST-0381,AST-CLOUD-381,Cloud Storage Bucket,Low,Minimal Impact
+AST-0382,AST-FIREWALL-382,Firewall Appliance,Low,Minimal Impact
+AST-0383,AST-IDENTITY-383,Identity Provider (IdP),Low,Minimal Impact
+AST-0384,SRV-DOMAIN-384,Domain Controller,Low,Minimal Impact
+AST-0385,SRV-DATABASE-385,Database Server,Low,Minimal Impact
+AST-0386,AST-PAYMENT-386,Payment Gateway,Low,Minimal Impact
+AST-0387,AST-WORKSTATION-387,Workstation,Low,Minimal Impact
+AST-0388,AST-API-388,API Gateway,Low,Minimal Impact
+AST-0389,AST-CLOUD-389,Cloud Storage Bucket,Low,Minimal Impact
+AST-0390,AST-FIREWALL-390,Firewall Appliance,Low,Minimal Impact
+AST-0391,AST-IDENTITY-391,Identity Provider (IdP),Low,Minimal Impact
+AST-0392,SRV-DOMAIN-392,Domain Controller,Low,Minimal Impact
+AST-0393,SRV-DATABASE-393,Database Server,Low,Minimal Impact
+AST-0394,AST-PAYMENT-394,Payment Gateway,Low,Minimal Impact
+AST-0395,AST-WORKSTATION-395,Workstation,Low,Minimal Impact
+AST-0396,AST-API-396,API Gateway,Low,Minimal Impact
+AST-0397,AST-CLOUD-397,Cloud Storage Bucket,Low,Minimal Impact
+AST-0398,AST-FIREWALL-398,Firewall Appliance,Low,Minimal Impact
+AST-0399,AST-IDENTITY-399,Identity Provider (IdP),Low,Minimal Impact
+AST-0400,SRV-DOMAIN-400,Domain Controller,Low,Minimal Impact
+AST-0401,SRV-DATABASE-401,Database Server,Low,Minimal Impact
+AST-0402,AST-PAYMENT-402,Payment Gateway,Low,Minimal Impact
+AST-0403,AST-WORKSTATION-403,Workstation,Low,Minimal Impact
+AST-0404,AST-API-404,API Gateway,Low,Minimal Impact
+AST-0405,AST-CLOUD-405,Cloud Storage Bucket,Low,Minimal Impact
+AST-0407,AST-IDENTITY-407,Identity Provider (IdP),Low,Minimal Impact
+AST-0408,SRV-DOMAIN-408,Domain Controller,Low,Minimal Impact
+AST-0411,AST-WORKSTATION-411,Workstation,Low,Minimal Impact
+AST-0412,AST-API-412,API Gateway,Low,Minimal Impact
+AST-0413,AST-CLOUD-413,Cloud Storage Bucket,Low,Minimal Impact
+AST-0414,AST-FIREWALL-414,Firewall Appliance,Low,Minimal Impact
+AST-0415,AST-IDENTITY-415,Identity Provider (IdP),Low,Minimal Impact
+AST-0417,SRV-DATABASE-417,Database Server,Low,Minimal Impact
+AST-0419,AST-WORKSTATION-419,Workstation,Low,Minimal Impact
+AST-0420,AST-API-420,API Gateway,Low,Minimal Impact
+AST-0422,AST-FIREWALL-422,Firewall Appliance,Low,Minimal Impact
+AST-0423,AST-IDENTITY-423,Identity Provider (IdP),Low,Minimal Impact
+AST-0424,SRV-DOMAIN-424,Domain Controller,Low,Minimal Impact
+AST-0425,SRV-DATABASE-425,Database Server,Low,Minimal Impact
+AST-0426,AST-PAYMENT-426,Payment Gateway,Low,Minimal Impact
+AST-0427,AST-WORKSTATION-427,Workstation,Low,Minimal Impact
+AST-0428,AST-API-428,API Gateway,Low,Minimal Impact
+AST-0429,AST-CLOUD-429,Cloud Storage Bucket,Low,Minimal Impact
+AST-0432,SRV-DOMAIN-432,Domain Controller,Low,Minimal Impact
+AST-0433,SRV-DATABASE-433,Database Server,Low,Minimal Impact
+AST-0434,AST-PAYMENT-434,Payment Gateway,Low,Minimal Impact
+AST-0435,AST-WORKSTATION-435,Workstation,Low,Minimal Impact
+AST-0436,AST-API-436,API Gateway,Low,Minimal Impact
+AST-0437,AST-CLOUD-437,Cloud Storage Bucket,Low,Minimal Impact
+AST-0438,AST-FIREWALL-438,Firewall Appliance,Low,Minimal Impact
+AST-0439,AST-IDENTITY-439,Identity Provider (IdP),Low,Minimal Impact
+AST-0441,SRV-DATABASE-441,Database Server,Low,Minimal Impact
+AST-0442,AST-PAYMENT-442,Payment Gateway,Low,Minimal Impact
+AST-0443,AST-WORKSTATION-443,Workstation,Low,Minimal Impact
+AST-0444,AST-API-444,API Gateway,Low,Minimal Impact
+AST-0445,AST-CLOUD-445,Cloud Storage Bucket,Low,Minimal Impact
+AST-0446,AST-FIREWALL-446,Firewall Appliance,Low,Minimal Impact
+AST-0448,SRV-DOMAIN-448,Domain Controller,Low,Minimal Impact
+AST-0449,SRV-DATABASE-449,Database Server,Low,Minimal Impact
+AST-0450,AST-PAYMENT-450,Payment Gateway,Low,Minimal Impact
+AST-0451,AST-WORKSTATION-451,Workstation,Low,Minimal Impact
+AST-0452,AST-API-452,API Gateway,Low,Minimal Impact
+AST-0453,AST-CLOUD-453,Cloud Storage Bucket,Low,Minimal Impact
+AST-0454,AST-FIREWALL-454,Firewall Appliance,Low,Minimal Impact
+AST-0455,AST-IDENTITY-455,Identity Provider (IdP),Low,Minimal Impact
+AST-0456,SRV-DOMAIN-456,Domain Controller,Low,Minimal Impact
+AST-0457,SRV-DATABASE-457,Database Server,Low,Minimal Impact
+AST-0458,AST-PAYMENT-458,Payment Gateway,Low,Minimal Impact
+AST-0460,AST-API-460,API Gateway,Low,Minimal Impact
+AST-0461,AST-CLOUD-461,Cloud Storage Bucket,Low,Minimal Impact
+AST-0462,AST-FIREWALL-462,Firewall Appliance,Low,Minimal Impact
+AST-0463,AST-IDENTITY-463,Identity Provider (IdP),Low,Minimal Impact
+AST-0464,SRV-DOMAIN-464,Domain Controller,Low,Minimal Impact
+AST-0465,SRV-DATABASE-465,Database Server,Low,Minimal Impact
+AST-0466,AST-PAYMENT-466,Payment Gateway,Low,Minimal Impact
+AST-0468,AST-API-468,API Gateway,Low,Minimal Impact
+AST-0469,AST-CLOUD-469,Cloud Storage Bucket,Low,Minimal Impact
+AST-0470,AST-FIREWALL-470,Firewall Appliance,Low,Minimal Impact
+AST-0471,AST-IDENTITY-471,Identity Provider (IdP),Low,Minimal Impact
+AST-0472,SRV-DOMAIN-472,Domain Controller,Low,Minimal Impact
+AST-0473,SRV-DATABASE-473,Database Server,Low,Minimal Impact
+AST-0475,AST-WORKSTATION-475,Workstation,Low,Minimal Impact
+AST-0477,AST-CLOUD-477,Cloud Storage Bucket,Low,Minimal Impact
+AST-0478,AST-FIREWALL-478,Firewall Appliance,Low,Minimal Impact
+AST-0479,AST-IDENTITY-479,Identity Provider (IdP),Low,Minimal Impact
+AST-0480,SRV-DOMAIN-480,Domain Controller,Low,Minimal Impact
+AST-0482,AST-PAYMENT-482,Payment Gateway,Low,Minimal Impact
+AST-0483,AST-WORKSTATION-483,Workstation,Low,Minimal Impact
+AST-0485,AST-CLOUD-485,Cloud Storage Bucket,Low,Minimal Impact
+AST-0486,AST-FIREWALL-486,Firewall Appliance,Low,Minimal Impact
+AST-0487,AST-IDENTITY-487,Identity Provider (IdP),Low,Minimal Impact
+AST-0488,SRV-DOMAIN-488,Domain Controller,Low,Minimal Impact
+AST-0489,SRV-DATABASE-489,Database Server,Low,Minimal Impact
+AST-0490,AST-PAYMENT-490,Payment Gateway,Low,Minimal Impact
+AST-0491,AST-WORKSTATION-491,Workstation,Low,Minimal Impact
+AST-0493,AST-CLOUD-493,Cloud Storage Bucket,Low,Minimal Impact
+AST-0494,AST-FIREWALL-494,Firewall Appliance,Low,Minimal Impact
+AST-0495,AST-IDENTITY-495,Identity Provider (IdP),Low,Minimal Impact
+AST-0496,SRV-DOMAIN-496,Domain Controller,Low,Minimal Impact
+AST-0497,SRV-DATABASE-497,Database Server,Low,Minimal Impact
+AST-0498,AST-PAYMENT-498,Payment Gateway,Low,Minimal Impact
+AST-0499,AST-WORKSTATION-499,Workstation,Low,Minimal Impact
+AST-0500,AST-API-500,API Gateway,Low,Minimal Impact
