@@ -1,88 +1,101 @@
-\# SAT-SA — Supervisory Analytics Tool for SOC Assessment
+# SAT-SA — Supervisory Analytics Tool for SOC Assessment
 
+> **An AI-assisted supervisory analytics platform for assessing SOC performance, investigation quality, and cyber-resilience.**
 
+## 📌 Project Overview
 
-SAT-SA is a supervisory analytics platform designed to support \*\*NCIIPC\*\* in assessing the operational effectiveness and cyber-resilience of Critical Sector Entities (CSEs).
+**SAT-SA** is a supervisory analytics platform designed to support **NCIIPC** in assessing the operational effectiveness and cyber-resilience of **Critical Sector Entities (CSEs)**.
 
+Security Operations Centers generate large volumes of alerts, investigations, evidence, escalations, and performance records. Manually reviewing these records across multiple entities can make it difficult to identify important patterns, inconsistencies, and areas that require deeper examination.
 
+SAT-SA addresses this challenge by analyzing submitted SOC records and providing **data-driven supervisory insights**.
 
-Instead of replacing or operating a Security Operations Center (SOC), SAT-SA analyzes periodically submitted SOC records such as alerts, investigations, evidence, escalations, closures, and workflow data.
+---
 
-## Demo Dataset
+## 🎯 Problem
 
-The deployed prototype uses a reduced synthetic DEMO dataset for fast demonstrations. The original full dataset remains available under `backend/data/full` for scalability testing. The DEMO dataset is representative, preserves cross-record relationships, and retains the planted supervisory signals used by the important findings.
+Supervisory teams need to review large volumes of SOC records to understand:
 
+* Whether investigations are being performed effectively
+* Whether reported outcomes are supported by evidence
+* Whether there are inconsistencies across records
+* Whether monitoring gaps or unusual patterns exist
+* Which records may require deeper examination
 
+Manual analysis of such information can be time-consuming and difficult to scale.
 
-\## 🎯 Objective
+---
 
+## 💡 Our Solution
 
+SAT-SA acts as an **independent supervisory analytics layer** over submitted SOC records.
 
-SAT-SA helps NCIIPC identify:
+It correlates and analyzes operational data to identify:
 
+* **Investigation quality concerns**
+* **Evidence inconsistencies and gaps**
+* **KPI vs. evidence mismatches**
+* **Potential monitoring blind spots**
+* **Unusual operational patterns**
+* **Records requiring deeper supervisory review**
 
+SAT-SA does **not replace the SOC or make the final supervisory decision**. It helps supervisors identify **where to look and what to investigate**, while the final decision remains with the human examiner.
 
-\- Potential operational weaknesses
+---
 
-\- Evidence gaps and inconsistencies
-
-\- Investigation-quality concerns
-
-\- KPI-versus-evidence mismatches
-
-\- Potential monitoring blind spots
-
-\- Workload-associated quality degradation
-
-\- Records that deserve deeper supervisory examination
-
-
-
-The platform prioritizes potentially doubtful or weak patterns so that \*\*NCIIPC personnel can manually examine the underlying records and make the final supervisory judgment.\*\*
-
-
-
-> \*\*SAT-SA doesn't say "GUILTY." SAT-SA says "WORTH CHECKING."\*\*
-
-
-
-\## 🔄 How SAT-SA Works
-
-
+## 🔄 How SAT-SA Works
 
 ```text
-
-CSE
-
-&#x20; ↓
-
-CSE SOC
-
-&#x20; ↓
-
-Alerts / Investigations / Evidence / Escalations / Closures
-
-&#x20; ↓
-
-Periodic Structured Submission
-
-&#x20; ↓
-
-SAT-SA
-
-&#x20; ↓
-
+SOC Records
+     ↓
+Data Ingestion
+     ↓
+Record Correlation
+     ↓
 Supervisory Analytics
-
-&#x20; ↓
-
+     ↓
 Potential Supervisory Signals
+     ↓
+Evidence Review
+     ↓
+Human Supervisory Decision
+```
 
-&#x20; ↓
+---
 
-NCIIPC Examiner / Senior Supervisor
+## 🚀 Key Features
 
-&#x20; ↓
+| Feature                      | Purpose                                                   |
+| ---------------------------- | --------------------------------------------------------- |
+| **SOC Record Analysis**      | Analyze submitted operational records                     |
+| **Cross-Record Correlation** | Connect related alerts, investigations and evidence       |
+| **Investigation Analysis**   | Identify potential investigation-quality concerns         |
+| **Evidence Consistency**     | Highlight gaps and inconsistencies                        |
+| **KPI vs Evidence Analysis** | Compare reported performance with supporting records      |
+| **Monitoring Analysis**      | Identify potential monitoring blind spots                 |
+| **Priority Identification**  | Help supervisors focus on records requiring deeper review |
+| **Human-in-the-Loop**        | Keep final supervisory decisions with the examiner        |
 
-Manual Examination \& Supervisory Decision
+---
 
+## 🖥️ Prototype
+
+The prototype provides a dashboard-based interface through which supervisors can:
+
+**Overview → Identify Signals → Explore Records → Review Evidence → Investigate**
+
+The current demonstration uses a **synthetic SOC dataset** designed to represent the relationships and patterns required to demonstrate SAT-SA's supervisory analytics capabilities.
+
+---
+
+## 🛠️ Technology Stack
+
+**Frontend:** React · TypeScript · Vite
+**Backend:** Python · Flask
+**Data:** Structured SOC records · Synthetic demonstration dataset
+**Deployment:** Vercel
+**Version Control:** Git · GitHub
+
+---
+
+> **SAT-SA transforms large volumes of SOC records into focused supervisory insights — helping humans investigate better, not replacing human judgment.**
